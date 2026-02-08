@@ -1,143 +1,134 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocket Cars Planet</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #ff6b35;
-        }
-        .tagline {
-            text-align: center;
-            padding: 10px;
-            font-size: 1.2em;
-            color: #cccccc;
-        }
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
-        }
-        .product-card {
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-            width: 250px;
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-image {
-            width: 100%;
-            height: 150px;
-            background-color: #333;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #cccccc;
-            font-size: 0.9em;
-        }
-        .product-name {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-        .product-price {
-            font-size: 1.1em;
-            color: #ff6b35;
-            margin-bottom: 15px;
-        }
-        .order-button {
-            background-color: #ff6b35;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .order-button:hover {
-            background-color: #e55a2b;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #cccccc;
-        }
-        @media (max-width: 768px) {
-            .products {
-                flex-direction: column;
-                align-items: center;
-            }
-            .product-card {
-                width: 90%;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pocket Cars Planet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #020617;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #22c55e;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 30px;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Pocket Cars Planet</h1>
-    </header>
-    <div class="tagline">
-        Premium Diecast Cars
+
+<header>
+    <h1>Pocket Cars Planet</h1>
+    <p>Premium Diecast Cars • DM to Order</p>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car">
+        <h3>Hot Wheels BMW</h3>
+        <div class="price">₹199</div>
+        <a class="btn" href="https://instagram.com/pocket.cars.planet" target="_blank">
+            Order on Instagram
+        </a>
     </div>
-    <section class="products">
-        <div class="product-card">
-            <div class="product-image">Image Placeholder</div>
-            <div class="product-name">Ferrari 488 Spider</div>
-            <div class="product-price">$50</div>
-            <a href="https://instagram.com/pocket.cars.planet" class="order-button">Order on Instagram</a>
-        </div>
-        <div class="product-card">
-            <div class="product-image">Image Placeholder</div>
-            <div class="product-name">Lamborghini Huracan</div>
-            <div class="product-price">$60</div>
-            <a href="https://instagram.com/pocket.cars.planet" class="order-button">Order on Instagram</a>
-        </div>
-        <div class="product-card">
-            <div class="product-image">Image Placeholder</div>
-            <div class="product-name">Porsche 911 GT3</div>
-            <div class="product-price">$55</div>
-            <a href="https://instagram.com/pocket.cars.planet" class="order-button">Order on Instagram</a>
-        </div>
-        <div class="product-card">
-            <div class="product-image">Image Placeholder</div>
-            <div class="product-name">McLaren 720S</div>
-            <div class="product-price">$65</div>
-            <a href="https://instagram.com/pocket.cars.planet" class="order-button">Order on Instagram</a>
-        </div>
-    </section>
-    <footer>
-        Follow us on Instagram: @pocket.cars.planet
-    </footer>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car">
+        <h3>Hot Wheels Ferrari</h3>
+        <div class="price">₹249</div>
+        <a class="btn" href="https://instagram.com/pocket.cars.planet" target="_blank">
+            Order on Instagram
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car">
+        <h3>Hot Wheels JDM</h3>
+        <div class="price">₹199</div>
+        <a class="btn" href="https://instagram.com/pocket.cars.planet" target="_blank">
+            Order on Instagram
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car">
+        <h3>Mini GT Supercar</h3>
+        <div class="price">₹999</div>
+        <a class="btn" href="https://instagram.com/pocket.cars.planet" target="_blank">
+            Order on Instagram
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    <p>Follow us on Instagram: @pocket.cars.planet</p>
+</footer>
+
 </body>
 </html>
-```
